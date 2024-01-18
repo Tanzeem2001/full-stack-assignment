@@ -1,0 +1,24 @@
+/* TransactionsStatistics.css */
+/* Add these styles in a separate CSS file or in your component's styles */
+/* Adjust styles as needed */
+
+.transactions-statistics {
+    margin-top: 20px;
+  }
+  
+  .transactions-statistics h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .statistics-item {
+    margin-bottom: 10px;
+  }
+  
+  .statistics-item label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  /* Adjust font sizes, colors, and margins as needed */
+  

@@ -1,0 +1,64 @@
+/* Add these styles in a separate CSS file or in your component's styles */
+/* Adjust styles as needed */
+
+/* Search box styles */
+.container{
+    padding: 20px;
+    margin: 20px;
+}
+
+.searchbar{ 
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    margin-bottom: 20px;
+    
+}
+
+#searchInput {
+   height: 30px;
+   width: 200px;
+   border-radius: 5px;
+   
+  }
+
+  .btn{
+    height: 34px;
+    width: 80px;
+    border-radius: 5px;
+  }
+  
+  /* Month dropdown styles */
+  #monthDropdown {
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+  }
+  
+  /* Table styles */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .table th,
+  .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #da6d15;
+  }
+  
+  /* Pagination button styles */
+  .text-center {
+    text-align: center;
+  }
+  
+  .btn-secondary {
+    margin-right: 10px;
+  }
+  
