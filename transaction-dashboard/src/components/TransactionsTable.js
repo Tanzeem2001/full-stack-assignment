@@ -159,10 +159,11 @@ function TransactionsTable({ onFetchTransactions, selectedMonth: propSelectedMon
 
     fetch(`http://localhost:8000/api/transactions?month=${selectedMonth}&start=${startIndex}&limit=${itemsPerPage}`)
       .then(response => response.json())
-      .then(data => {
-        console.log("API Response:", data);
-        setTransactions(data.transactions || []); // Extract the array from the response or provide a default empty array
-      })
+      // .then(data => {
+      //   console.log('Fetched data:', data);
+      //   setTransactions(data.transactions || []); // Extract the array from the response or provide a default empty array
+      // })
+      .then(data => console.log('Fetched data:', data))
       .catch(error => console.error('Error fetching transactions:', error));
   };
 
