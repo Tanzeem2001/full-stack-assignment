@@ -36,17 +36,18 @@
 // TransactionsStatistics.js
 import React, { useState, useEffect } from 'react';
 
-function TransactionsStatistics({ selectedMonth, onFetchStatistics }) {
+function TransactionsStatistics({ selectedMonth }) {
   const [statistics, setStatistics] = useState({});
 
   useEffect(() => {
     // Fetch statistics when the component mounts or when selectedMonth changes
-    // fetchStatistics();
+    fetchStatistics(selectedMonth);
   }, [selectedMonth]);
 
-  const fetchStatistics = () => {
-    // Call the provided onFetchStatistics callback to fetch data
-    onFetchStatistics(selectedMonth)
+  const fetchStatistics = (month) => {
+    // Replace 'http://localhost:8000/statistics' with your actual API endpoint
+    fetch(`http://localhost:8000/statistics?month=${month}`)
+      .then(response => response.json())
       .then(data => setStatistics(data))
       .catch(error => console.error('Error fetching statistics:', error));
   };
